@@ -1,0 +1,45 @@
+when making an alkane occur multiple times on another alkane, do not make it like:
+1,2-dimethyl
+
+make it:
+1,2-bis(methyl)
+
+use the brackets when defining nested alkanes with multiple indexes, and di-tri for adding other elements.
+
+more examples:
+
+1,2-diethylpentane   x
+1,2-bis(ethyl)pentane   √
+
+1,3,4-tribromobutane √
+1,3,4-tris(bromo)butane x
+
+2-methylpentane √ (brackets are optional because only one index was specified)
+
+\____/v\____/
+      |
+    This is a "feature" resulting from a bug, and will likely be removed, eg brackets will always be optional for those alkanes
+
+to specify integers, use cycloalkanes:
+
+The following n-(2-methyl-3-propyl-4-ethylcyclobutane):
+      ... - C - ...
+            |
+            C
+          /   \
+ C - C - C     C - C
+          \   /
+            C
+            |
+            C
+            |
+            C
+represents "132".
+do not place groups on the first index of the group, as that is already connected to a branch leading to the main branch. this is pretty much just to make 3d visualisation easier in the future.
+
+if you want to specify a point in memory:
+    place an oxyl group on the same point as the cycloalkane, and that will make the number it represents the pointer value.
+
+
+if you want to create the integer in-line:
+    just dont use the oxyl group

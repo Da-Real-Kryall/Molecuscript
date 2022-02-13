@@ -1,0 +1,64 @@
+so i iterate through the main branch of the molecule
+
+main branch is ALL CARBON
+
+maximum of 2 things per each carbon in the chain, save for the start and end which can have 3
+
+
+
+
+
+
+passing through an ether group outputs the value in the array with the index of 
+
+when performing an operation the number of alkyl groups following it is the index in the data array the calculation is being performed on (will probably change)
+
+so c-c-c-c-c-o-c will output array[5]
+
+array is all 0's and is infinitely long
+
+numbers are a cyclic group with each of the alkene groups attached with length 0-9 being the digits
+
+* these halogens are arithmetic: (can also be used as highlighters)
+    F = +
+    Cl = -
+    Br = *
+    I = / (floors)
+
+* N, P, O, At and S are syntax tokens:
+    O  = variable assignment and retrieval
+    N  = gotos and labels
+    P  = print (evaluates int to character)
+    At = if both attached trees are equal to one another, evaluate what is on it
+    S  = makes other labels do different things if its also there
+
+effects of S:
+    turns O from var retrieval to assignment
+    turns N from a goto to assignment
+    turns print to a print flush
+    turns At from if = to if !=
+    turns S to a crash everything just cause
+
+
+#need Exponent (**) and Modulo (%)
+
+* no floats (yet)
+* order of operations is order of operations given, so 3+2/3-2*5 is (((3+2)/3)-2)*5
+
+
+things to work out:
+    flow control (just make labels and jumpto)
+    arithmetic
+    output
+    var assignment
+    input
+    if statement
+
+
+if statement:
+    t junction
+
+
+get length of base alkane
+
+add groups
